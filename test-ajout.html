@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Test ajout produit</title>
+</head>
+<body>
+
+    <h1>Test ajout produit</h1>
+
+    <form action="api/ajouter-produit.php" method="POST">
+        <div>
+            <label>Nom du produit</label>
+            <input type="text" name="nom" placeholder="Ex : MacBook">
+        </div>
+
+        <div>
+            <label>Prix</label>
+            <input type="number" step="0.01" name="prix" placeholder="Ex : 1200">
+        </div>
+
+        <div>
+            <label>Stock</label>
+            <input type="number" name="stock" placeholder="Ex : 5">
+        </div>
+
+        <div>
+            <label>Catégorie</label>
+            <input type="text" name="categorie" placeholder="Ex : Informatique">
+        </div>
+
+        <button type="submit">Ajouter le produit</button>
+    </form>
+
+</body>
+</html>
